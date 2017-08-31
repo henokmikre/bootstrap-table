@@ -1404,8 +1404,7 @@
             html.push('</div>',
                 '<div class="pull-' + this.options.paginationHAlign + ' pagination">',
                 '<ul class="pagination' + sprintf(' pagination-%s', this.options.iconSize) + '">',
-                '<li class="page-pre"><a title="Go to previous page" href="#">' + this.options.paginationPreText + '</a></li>');
-
+                '<li class="page-pre"><a title="Go to previous page" aria-label="Go to previous page" href="#">' + this.options.paginationPreText + '</a></li>');
 
             if (this.totalPages < 5) {
                 from = 1;
@@ -1484,7 +1483,7 @@
             }
 
             html.push(
-                '<li class="page-next"><a title="Go to next page" href="#">' + this.options.paginationNextText + '</a></li>',
+                '<li class="page-next"><a title="Go to next page" aria-label="Go to next page" href="#">' + this.options.paginationNextText + '</a></li>',
                 '</ul>',
                 '</div>');
         }
